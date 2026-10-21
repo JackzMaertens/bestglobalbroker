@@ -42,7 +42,7 @@
     "name": "BestGlobalBroker.com",
     "url": "https://bestglobalbroker.com/",
     "description": "5 Expert Advisors de trading automatizado para MT5. Gratis con cuenta FPTrading o $150 USD por EA.",
-    "telephone": "+34620987016"
+    "email": "support@bestglobalbroker.com"
   }
   </script>
 </head>
@@ -658,9 +658,11 @@
 
         <div class="footer-col">
           <h4 data-i18n="footer_legal_title">Información Legal</h4>
-          <a href="https://portal.fptrading.com/register?fpm-affiliate-utm-source=IB&fpm-affiliate-agt=473111" target="_blank" rel="noopener">FPTrading Partner (IB 473111)</a>
-          <a href="#solicitud">jackzmaertens@gmail.com</a>
-          <a href="https://wa.me/34620987016" target="_blank" rel="noopener">+34 620 98 70 16</a>
+          <a href="#terms" class="legal-trigger" data-modal="terms" data-i18n="footer_terms">Términos y Condiciones</a>
+          <a href="#privacy" class="legal-trigger" data-modal="privacy" data-i18n="footer_privacy">Política de Privacidad</a>
+          <a href="#risk" class="legal-trigger" data-modal="risk" data-i18n="footer_risk_notice">Descargo y Advertencia de Riesgo</a>
+          <a href="#affiliate" class="legal-trigger" data-modal="affiliate" data-i18n="footer_affiliate">Divulgación de Afiliación (IB)</a>
+          <a href="#solicitud" data-i18n="footer_contact">Soporte y Contacto</a>
         </div>
       </div>
 
@@ -673,6 +675,23 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- Legal Modal Window -->
+  <div id="legal-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Información Legal</h3>
+        <button id="modal-close-btn" class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-content" id="modal-body">
+        <!-- Injected dynamically via script.js -->
+      </div>
+      <div class="modal-footer">
+        <button id="modal-ok-btn" class="btn btn-purple btn-sm" data-i18n="modal_close">Cerrar</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="translations.js"></script>

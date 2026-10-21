@@ -196,4 +196,55 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // Legal Modal Handler
+  const legalModal = document.getElementById('legal-modal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalBody = document.getElementById('modal-body');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+  const modalOkBtn = document.getElementById('modal-ok-btn');
+
+  function openLegalModal(type) {
+    if (!legalModal || typeof translations === 'undefined') return;
+    const langData = translations[currentLang] || translations['es'];
+    const titleKey = type + '_title';
+    const contentKey = type + '_content';
+
+    if (langData[titleKey] && langData[contentKey]) {
+      modalTitle.textContent = langData[titleKey];
+      modalBody.innerHTML = langData[contentKey];
+      legalModal.classList.add('open');
+      legalModal.setAttribute('aria-hidden', 'false');
+    }
+  }
+
+  function closeLegalModal() {
+    if (!legalModal) return;
+    legalModal.classList.remove('open');
+    legalModal.setAttribute('aria-hidden', 'true');
+  }
+
+  document.querySelectorAll('.legal-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const modalType = trigger.getAttribute('data-modal');
+      openLegalModal(modalType);
+    });
+  });
+
+  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeLegalModal);
+  if (modalOkBtn) modalOkBtn.addEventListener('click', closeLegalModal);
+
+  if (legalModal) {
+    legalModal.addEventListener('click', (e) => {
+      if (e.target === legalModal) closeLegalModal();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && legalModal && legalModal.classList.contains('open')) {
+      closeLegalModal();
+    }
+  });
+
 });

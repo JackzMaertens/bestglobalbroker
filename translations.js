@@ -168,7 +168,21 @@ const translations = {
         "footer_links_title": "Navegación",
         "footer_legal_title": "Información Legal",
         "footer_risk": "Aviso de Riesgo: El trading en los mercados financieros, divisas (Forex), materias primas y contratos por diferencias (CFDs) conlleva un alto nivel de riesgo para su capital y puede no ser adecuado para todos los inversores. Existe la posibilidad de perder parte o la totalidad del capital invertido. Los resultados pasados de backtests o simulaciones no garantizan rendimientos futuros. Asegúrese de comprender plenamente los riesgos antes de operar.",
-        "footer_copy": "© 2026 BestGlobalBroker.com. Todos los derechos reservados."
+        "footer_copy": "© 2026 BestGlobalBroker.com. Todos los derechos reservados.",
+        "footer_terms": "Términos y Condiciones",
+        "footer_privacy": "Política de Privacidad",
+        "footer_risk_notice": "Descargo y Advertencia de Riesgo",
+        "footer_affiliate": "Divulgación de Afiliación (IB FPTrading)",
+        "footer_contact": "Soporte y Contacto",
+        "modal_close": "Cerrar",
+        "terms_title": "Términos y Condiciones de Uso",
+        "terms_content": "<p>1. <b>Naturaleza del Servicio:</b> BestGlobalBroker.com ofrece información educativa, herramientas de software y plantillas para MetaTrader 5 desarrolladas por JAIAK Trading. No constituimos una entidad bancaria, sociedad de valores ni prestamos asesoramiento financiero personalizado.</p><p>2. <b>Licencia de Uso:</b> Los archivos compilados (.ex5) entregados se proporcionan para uso personal y no exclusivo del usuario. Queda terminantemente prohibida su reventa, descompilación o distribución no autorizada.</p><p>3. <b>Operativa de Trading:</b> El usuario reconoce que toda orden ejecutada en su terminal MT5 es de su exclusiva responsabilidad.</p>",
+        "privacy_title": "Política de Privacidad y Protección de Datos",
+        "privacy_content": "<p>1. <b>Responsable del Tratamiento:</b> BestGlobalBroker.com respeta la privacidad de sus usuarios conforme a los principios de confidencialidad y RGPD.</p><p>2. <b>Datos Recopilados:</b> Únicamente solicitamos nombre, correo electrónico e ID de cuenta de trading para verificar la activación del paquete promocional con FPTrading.</p><p>3. <b>No Comercialización:</b> No vendemos, cedemos ni transferimos información personal a terceros ajenos a la provisión directa de los archivos solicitados.</p>",
+        "affiliate_title": "Divulgación de Afiliados (Introducing Broker)",
+        "affiliate_content": "<p>BestGlobalBroker.com mantiene un acuerdo de afiliación como Introducing Broker (IB #473111) con FPTrading. Podemos recibir una compensación por volumen cuando los usuarios abren y operan en su cuenta a través de nuestros enlaces oficiales, permitiéndonos ofrecer los EAs de JAIAK de forma gratuita sin coste adicional para el cliente.</p>",
+        "risk_title": "Aviso Legal y Descargo de Riesgo",
+        "risk_content": "<p>1. <b>Riesgo Financiero Alto:</b> El comercio en los mercados de divisas (Forex), materias primas y contratos por diferencias (CFDs) con apalancamiento conlleva un nivel sustancial de riesgo y puede resultar en pérdidas que igualen o superen el capital depositado.</p><p>2. <b>Sin Garantías de Rendimiento:</b> El rendimiento pasado, simulaciones históricas o pruebas retrospectivas (backtests) de los algoritmos de JAIAK Trading no garantizan rendimientos futuros similares. El mercado real está sujeto a deslizamientos (slippage), volatilidad y eventos macroeconómicos impredecibles.</p><p>3. <b>Decisión del Inversor:</b> Cada inversor debe evaluar detenidamente su experiencia previa, tolerancia al riesgo y situación financiera antes de ejecutar operaciones automáticas o manuales.</p>"
     },
     "en": {
         "ann_live": "LIVE",
@@ -338,6 +352,20 @@ const translations = {
         "footer_links_title": "Quick Links",
         "footer_legal_title": "Legal Information",
         "footer_risk": "Risk Warning: Trading financial instruments, Foreign Exchange (Forex), commodities, and Contracts for Difference (CFDs) carries a high level of risk to your capital and may not be suitable for all investors. You may lose some or all of your invested money. Past performance and backtest results do not guarantee future returns. Ensure you fully understand the risks involved before trading.",
-        "footer_copy": "© 2026 BestGlobalBroker.com. All rights reserved."
+        "footer_copy": "© 2026 BestGlobalBroker.com. All rights reserved.",
+        "footer_terms": "Terms & Conditions",
+        "footer_privacy": "Privacy Policy",
+        "footer_risk_notice": "Risk Warning & Disclaimer",
+        "footer_affiliate": "Affiliate Disclosure (FPTrading IB)",
+        "footer_contact": "Support & Contact",
+        "modal_close": "Close",
+        "terms_title": "Terms and Conditions of Use",
+        "terms_content": "<p>1. <b>Service Nature:</b> BestGlobalBroker.com provides educational content, software tools, and MetaTrader 5 templates developed by JAIAK Trading. We are not a banking institution, broker-dealer, or personalized investment advisory service.</p><p>2. <b>Usage License:</b> Compiled (.ex5) files are granted for personal, non-exclusive use. Unauthorized resale, decompilation, or redistribution is strictly prohibited.</p><p>3. <b>Trading Execution:</b> The user acknowledges that all trade orders executed within their MT5 platform remain under their sole responsibility and risk.</p>",
+        "privacy_title": "Privacy & Data Protection Policy",
+        "privacy_content": "<p>1. <b>Data Controller:</b> BestGlobalBroker.com respects user privacy in strict accordance with international data protection and GDPR principles.</p><p>2. <b>Information Collected:</b> We solely request your name, email address, and trading account ID to verify promotion eligibility with FPTrading.</p><p>3. <b>Zero Third-Party Commercialization:</b> We do not sell, rent, or distribute personal information to external third parties.</p>",
+        "affiliate_title": "Affiliate & Introducing Broker Disclosure",
+        "affiliate_content": "<p>BestGlobalBroker.com operates as an independent Introducing Broker (IB #473111) with FPTrading. We may receive commission compensation based on trading volume when users register through our official partner links, enabling us to provide JAIAK EAs without any extra charge to the user.</p>",
+        "risk_title": "Risk Warning & Financial Disclaimer",
+        "risk_content": "<p>1. <b>Substantial Financial Risk:</b> Trading Foreign Exchange (Forex), commodities, and Contracts for Difference (CFDs) with leverage carries a high degree of risk and can result in the loss of all deposited funds.</p><p>2. <b>No Return Guarantees:</b> Historical backtests, performance metrics, and automated simulations of JAIAK Trading EAs do not represent or guarantee identical future outcomes. Live markets are inherently subject to slippage, spread fluctuations, and unexpected volatility.</p><p>3. <b>Independent Decision Making:</b> Every individual must prudently assess their financial situation, investment objectives, and risk appetite before deploying algorithmic systems.</p>"
     }
 };
