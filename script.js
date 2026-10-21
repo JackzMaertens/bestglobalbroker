@@ -1,7 +1,7 @@
 // BestGlobalBroker.com — Client Interaction & Multi-Language Logic
 
 const logsES = [
-  "[09:30:01] Conectado a FPTrading MetaTrader 5 (Servidor ECN)...",
+  "[09:30:01] Conectado a FPTrading MetaTrader 5 (Servidor Standard)...",
   "[09:30:03] Cargar EA #1: JAIAK Smart Trending EA [XAUUSD, M5]",
   "[09:30:05] Cargar EA #2: JAIAK Classic Trend EA [Multi-Indicador]",
   "[09:30:07] Cargar EA #3: JAIAK Ratio EA [Pairs Trading, Z-Score]",
@@ -19,7 +19,7 @@ const logsES = [
 ];
 
 const logsEN = [
-  "[09:30:01] Connected to FPTrading MetaTrader 5 (Raw ECN Server)...",
+  "[09:30:01] Connected to FPTrading MetaTrader 5 (Standard Server)...",
   "[09:30:03] Loaded EA #1: JAIAK Smart Trending EA [XAUUSD, M5]",
   "[09:30:05] Loaded EA #2: JAIAK Classic Trend EA [Multi-Indicator]",
   "[09:30:07] Loaded EA #3: JAIAK Ratio EA [Pairs Trading, Z-Score]",
