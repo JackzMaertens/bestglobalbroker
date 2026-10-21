@@ -3,12 +3,11 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bestglobalbroker.com/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://bestglobalbroker.com/?lang=es"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bestglobalbroker.com/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bestglobalbroker.com/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bestglobalbroker.com/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bestglobalbroker.com/"/>
   </url>
 </urlset>
