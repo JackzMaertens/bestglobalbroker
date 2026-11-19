@@ -1,25 +1,23 @@
 ==================================================
-  JAIAK EAs PROMO BUNDLE - BestGlobalBroker.com
+  JAIAK V1 Expert Advisors - BestGlobalBroker.com
 ==================================================
 
-¡Enhorabuena por registrarte en FPTrading a través de BestGlobalBroker.com!
+EAs JAIAK V1 para MetaTrader 5 (XAUUSD):
+  - JAIAK TREND JURY V1      -> XAUUSD M1
+  - JAIAK ANGLE SHIFT V1     -> XAUUSD M5
+  - JAIAK BREAKOUT RIDER V1  -> XAUUSD M1
+  - JAIAK ICE CROSS V1       -> XAUUSD M1
 
-Este paquete contiene:
-1. JAIAK Smart Trending EA.ex5 (Para XAUUSD M5 en MT5)
-2. JAIAK Classic Trend EA.ex5 (Para MT5 Multi-Indicador)
-3. Guía de Instalación y Configuración de Parámetros.pdf
+Los archivos .ex5 y .set se entregan con un enlace de descarga privado
+tras la compra o tras verificar tu cuenta FPTrading. No se publican aqui.
 
-INSTRUCCIONES RÁPIDAS DE INSTALACIÓN EN METATRADER 5:
---------------------------------------------------
-1. Abre tu plataforma MetaTrader 5 conectada a tu cuenta de FPTrading.
-2. Ve al menú superior: Archivo -> Abrir Carpeta de Datos.
-3. Entra en MQL5 -> Experts.
-4. Copia los archivos JAIAK Smart Trending EA.ex5 y JAIAK Classic Trend EA.ex5 dentro de la carpeta Experts.
-5. Reinicia MT5 o haz clic derecho en la ventana "Navegador" -> Actualizar.
-6. Arrastra el EA deseado al gráfico (XAUUSD M5 para Smart Trending).
-7. Asegúrate de activar el botón "Algo Trading / Trading Automatizado" en la barra superior de MT5.
+INSTALACION EN METATRADER 5
+1. Archivo -> Abrir carpeta de datos.
+2. Copia el archivo .ex5 en MQL5 -> Experts y el .set en MQL5 -> Presets.
+3. En el Navegador: Asesores expertos -> clic derecho -> Actualizar.
+4. Abre un grafico XAUUSD en el marco indicado y arrastra el EA.
+5. En Parametros de entrada pulsa "Cargar" y elige su archivo .set.
+6. Marca "Permitir comercio algoritmico" y activa "Trading algoritmico".
 
-Soporte y Consultas:
-Web: https://bestglobalbroker.com
-Broker Afiliado: FPTrading (https://portal.fptrading.com/register?fpm-affiliate-utm-source=IB&fpm-affiliate-agt=473111)
+Soporte: https://bestglobalbroker.com  ·  WhatsApp +34 620 98 70 16
 ==================================================
