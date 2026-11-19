@@ -4,17 +4,17 @@
 
   /* ------------------------------------------------------------------
      CHECKOUT LINKS (USDT / USDC)
-     Paste here the crypto payment link of each EA ($150) from your
+     Paste here the crypto payment link of each EA ($49) from your
      gateway (e.g. NOWPayments payment link / invoice). The "Buy" button
      opens it in a new tab and also prepares the form, where the buyer
      sends the payment ID + MT5 account number. While a link is empty,
      "Buy" only opens the form with that EA pre-filled.
      ------------------------------------------------------------------ */
   var CHECKOUT = {
-    jury:  "https://nowpayments.io/payment/?iid=4437725295",
-    angle: "https://nowpayments.io/payment/?iid=5366102037",
-    rider: "https://nowpayments.io/payment/?iid=5843197917",
-    ice:   "https://nowpayments.io/payment/?iid=5924352728"
+    jury:  "",
+    angle: "",
+    rider: "",
+    ice:   ""
   };
   var FORM_ENDPOINT = "https://formsubmit.co/ajax/jackzmaertens@gmail.com";
 
