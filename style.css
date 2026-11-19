@@ -335,3 +335,6 @@ body.lock { overflow: hidden; }
   .annbar a { gap: 8px; font-size: 12.5px; }
 }
 @media print { .nav, .annbar, .wa, .hero-art { display: none; } body { background: #fff; color: #000; } }
+
+.nocrypto { margin: 14px 0 0; font-size: 13px; color: var(--muted); text-align: center; }
+.nocrypto a { color: var(--up); text-decoration: underline; text-underline-offset: 3px; }

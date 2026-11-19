@@ -11,10 +11,10 @@
      "Buy" only opens the form with that EA pre-filled.
      ------------------------------------------------------------------ */
   var CHECKOUT = {
-    jury:  "",
-    angle: "",
-    rider: "",
-    ice:   ""
+    jury:  "https://nowpayments.io/payment/?iid=4437725295",
+    angle: "https://nowpayments.io/payment/?iid=5366102037",
+    rider: "https://nowpayments.io/payment/?iid=5843197917",
+    ice:   "https://nowpayments.io/payment/?iid=5924352728"
   };
   var FORM_ENDPOINT = "https://formsubmit.co/ajax/jackzmaertens@gmail.com";
 
