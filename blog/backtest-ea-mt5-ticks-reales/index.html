@@ -18,7 +18,7 @@
   <meta property="og:locale" content="es_ES">
   <meta property="og:title" content="Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales | JAIAK">
   <meta property="og:description" content="Guía paso a paso para probar un Expert Advisor en el probador de estrategias de MT5 con «Cada tick a base de ticks reales», leer el informe y hacer un test forward.">
-  <meta property="og:image" content="https://bestglobalbroker.com/og-image.png">
+  <meta property="og:image" content="https://bestglobalbroker.com/img/blog/backtest-es.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/style.css?v=4">
-  <link rel="stylesheet" href="/pages.css?v=4">
+  <link rel="stylesheet" href="/pages.css?v=5">
   <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -40,7 +40,7 @@
    "datePublished": "2026-11-20",
    "dateModified": "2026-11-20",
    "mainEntityOfPage": "https://bestglobalbroker.com/blog/backtest-ea-mt5-ticks-reales/",
-   "image": "https://bestglobalbroker.com/og-image.png",
+   "image": "https://bestglobalbroker.com/img/blog/backtest-es.jpg",
    "author": {
     "@type": "Organization",
     "name": "JAIAK Trading"
@@ -109,6 +109,7 @@
         <h1>Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales</h1>
         <p class="lead">El probador de estrategias de MetaTrader 5 es la mejor herramienta gratuita para saber si un EA tiene sentido antes de arriesgar dinero. Bien configurado, simula el mercado con los ticks reales de tu broker. Mal configurado, te enseña resultados que nunca vas a ver en real.</p>
       </header>
+      <figure class="pcover"><img src="/img/blog/backtest-es.webp" width="1200" height="630" alt="Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales"></figure>
       <div class="prose">
 <h2>1. Abre el probador</h2>
 <p>En MT5 pulsa <b>Ctrl+R</b> (o menú Ver → Probador de estrategias). En la pestaña <b>Configuración</b> elige el EA en «Experto», el símbolo (XAUUSD o como lo llame tu broker: GOLD, XAUUSD.m…) y el marco temporal para el que está pensado el EA.</p>
@@ -119,6 +120,7 @@
 <h2>3. El modo de modelado: ticks reales</h2>
 <p>En «Modelado» elige <b>«Cada tick a base de ticks reales»</b>. MT5 descarga los ticks que tu broker registró de verdad, con su spread variable. Es más lento que «OHLC en M1» o «Solo precios de apertura», pero es el único modo fiable para EAs que operan en M1 o M5 con stops ajustados. Al terminar, el informe muestra la «Calidad del historial»: lo ideal es 100% o muy cerca.</p>
 
+<figure class="pfig"><img src="/img/blog/backtest-fig-es.webp" width="1200" height="700" loading="lazy" alt="Ajustes recomendados del probador de estrategias de MT5 para un EA de oro"><figcaption>Los ajustes clave. El modo de modelado es el que más cambia el resultado.</figcaption></figure>
 <h2>4. Depósito, apalancamiento y retrasos</h2>
 <p>Pon un depósito parecido al que vas a usar (por ejemplo 10.000 USD) y el apalancamiento de tu cuenta. En «Retrasos» puedes simular el retraso de ejecución: «Sin retrasos» es el caso ideal; un retraso aleatorio te enseña cómo empeora el resultado con una ejecución real. Si el EA se hunde con un retraso pequeño, depende demasiado de la ejecución perfecta.</p>
 
@@ -137,6 +139,7 @@
 </ul>
 <p>La pestaña «Gráfico» muestra la curva de balance y equidad. Busca una subida sostenida, no un salto puntual.</p>
 
+<figure class="pfig"><img src="/img/ea/trend-jury-backtest.webp" width="1200" height="675" loading="lazy" alt="Curva de balance del backtest de JAIAK Trend Jury con ticks reales"><figcaption>Ejemplo real: Trend Jury en XAUUSD M1 con ticks reales, del 18 de mayo al 17 de noviembre de 2026.</figcaption></figure>
 <h2>7. Guarda el informe</h2>
 <p>Con clic derecho sobre el informe → Informe → HTML guardas un informe completo con todas las operaciones. Es útil para compararlo con resultados en vivo más adelante.</p>
 

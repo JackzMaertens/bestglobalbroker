@@ -18,7 +18,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="How to backtest an EA in MetaTrader 5 with real ticks | JAIAK">
   <meta property="og:description" content="Step-by-step guide to testing an Expert Advisor in the MT5 Strategy Tester with &quot;Every tick based on real ticks&quot;, reading the report and running a forward test.">
-  <meta property="og:image" content="https://bestglobalbroker.com/og-image.png">
+  <meta property="og:image" content="https://bestglobalbroker.com/img/blog/backtest-en.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/style.css?v=4">
-  <link rel="stylesheet" href="/pages.css?v=4">
+  <link rel="stylesheet" href="/pages.css?v=5">
   <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -40,7 +40,7 @@
    "datePublished": "2026-11-20",
    "dateModified": "2026-11-20",
    "mainEntityOfPage": "https://bestglobalbroker.com/en/blog/backtest-ea-mt5-real-ticks/",
-   "image": "https://bestglobalbroker.com/og-image.png",
+   "image": "https://bestglobalbroker.com/img/blog/backtest-en.jpg",
    "author": {
     "@type": "Organization",
     "name": "JAIAK Trading"
@@ -109,6 +109,7 @@
         <h1>How to backtest an EA in MetaTrader 5 with real ticks</h1>
         <p class="lead">The MetaTrader 5 Strategy Tester is the best free tool to find out whether an EA makes sense before you risk money. Set up well, it simulates the market with your broker's real ticks. Set up badly, it shows you results you will never see live.</p>
       </header>
+      <figure class="pcover"><img src="/img/blog/backtest-en.webp" width="1200" height="630" alt="How to backtest an EA in MetaTrader 5 with real ticks"></figure>
       <div class="prose">
 <h2>1. Open the tester</h2>
 <p>In MT5 press <b>Ctrl+R</b> (or View → Strategy Tester). In the <b>Settings</b> tab pick the EA under "Expert", the symbol (XAUUSD or whatever your broker calls it: GOLD, XAUUSD.m…) and the timeframe the EA is designed for.</p>
@@ -119,6 +120,7 @@
 <h2>3. Modelling mode: real ticks</h2>
 <p>Under "Modelling" choose <b>"Every tick based on real ticks"</b>. MT5 downloads the ticks your broker actually recorded, with their variable spread. It is slower than "1 minute OHLC" or "Open prices only", but it is the only reliable mode for EAs trading M1 or M5 with tight stops. When the test ends, the report shows the "History quality": ideally 100% or very close.</p>
 
+<figure class="pfig"><img src="/img/blog/backtest-fig-en.webp" width="1200" height="700" loading="lazy" alt="Recommended MT5 Strategy Tester settings for a gold EA"><figcaption>The key settings. The modelling mode is the one that changes the result most.</figcaption></figure>
 <h2>4. Deposit, leverage and delays</h2>
 <p>Use a deposit similar to the one you will trade (for example 10,000 USD) and your account's leverage. Under "Delays" you can simulate execution delay: "Zero latency" is the ideal case; a random delay shows how much the result worsens with real execution. If the EA collapses with a small delay, it depends too much on perfect execution.</p>
 
@@ -137,6 +139,7 @@
 </ul>
 <p>The "Graph" tab shows the balance and equity curve. Look for a steady climb, not a single jump.</p>
 
+<figure class="pfig"><img src="/img/ea/trend-jury-backtest.webp" width="1200" height="675" loading="lazy" alt="JAIAK Trend Jury real-tick backtest balance curve"><figcaption>A real example: Trend Jury on XAUUSD M1 with real ticks, 18 May to 17 November 2026.</figcaption></figure>
 <h2>7. Save the report</h2>
 <p>Right-click the report → Report → HTML saves a full report with every trade. It is useful for comparing with live results later.</p>
 

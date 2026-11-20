@@ -18,7 +18,7 @@
   <meta property="og:locale" content="es_ES">
   <meta property="og:title" content="Varios EAs en la misma cuenta de MT5: números mágicos y riesgo total | JAIAK">
   <meta property="og:description" content="Cómo usar varios Expert Advisors a la vez en una cuenta de MetaTrader 5 sin que se pisen: números mágicos, un gráfico por EA, riesgo combinado, margen y VPS.">
-  <meta property="og:image" content="https://bestglobalbroker.com/og-image.png">
+  <meta property="og:image" content="https://bestglobalbroker.com/img/blog/multi-es.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/style.css?v=4">
-  <link rel="stylesheet" href="/pages.css?v=4">
+  <link rel="stylesheet" href="/pages.css?v=5">
   <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -40,7 +40,7 @@
    "datePublished": "2026-11-20",
    "dateModified": "2026-11-20",
    "mainEntityOfPage": "https://bestglobalbroker.com/blog/varios-ea-misma-cuenta-mt5/",
-   "image": "https://bestglobalbroker.com/og-image.png",
+   "image": "https://bestglobalbroker.com/img/blog/multi-es.jpg",
    "author": {
     "@type": "Organization",
     "name": "JAIAK Trading"
@@ -109,6 +109,7 @@
         <h1>Varios EAs en la misma cuenta de MT5: números mágicos y riesgo total</h1>
         <p class="lead">Combinar varios EAs con estrategias distintas suaviza la curva: cuando uno está en racha mala, otro puede estar ganando. Pero hay que montarlo bien para que no se cierren las operaciones entre ellos ni sumen más riesgo del que crees.</p>
       </header>
+      <figure class="pcover"><img src="/img/blog/multi-es.webp" width="1200" height="630" alt="Varios EAs en la misma cuenta de MT5: números mágicos y riesgo total"></figure>
       <div class="prose">
 <h2>1. Un número mágico distinto para cada EA</h2>
 <p>El número mágico es una etiqueta que el EA pone en cada orden. Un EA bien hecho solo gestiona las posiciones con su número mágico, así que no toca las de los demás ni tus operaciones manuales. Si usas dos copias del mismo EA (por ejemplo en dos símbolos o con dos configuraciones), cambia el número mágico en una de ellas.</p>
@@ -124,6 +125,7 @@
 <li>Combina estrategias distintas (tendencia, momentum, cruce) mejor que varias parecidas.</li>
 </ul>
 
+<figure class="pfig"><img src="/img/blog/multi-fig-es.webp" width="1200" height="620" loading="lazy" alt="Riesgo abierto a la vez con 1, 2 y 4 EAs al 0,3% cada uno"><figcaption>Con los 4 EAs JAIAK al 0,3%, el riesgo simultáneo máximo es del 1,2% del balance.</figcaption></figure>
 <h2>4. Revisa el margen</h2>
 <p>Varias posiciones abiertas en oro consumen margen. Con un apalancamiento bajo o una cuenta pequeña, un EA puede no poder abrir porque los otros ya usan el margen. Los EAs bien hechos comprueban el margen antes de cada orden, pero conviene dejar holgura.</p>
 

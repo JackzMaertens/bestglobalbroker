@@ -18,7 +18,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Several EAs on one MT5 account: magic numbers and total risk | JAIAK">
   <meta property="og:description" content="How to run several Expert Advisors at once on a MetaTrader 5 account without conflicts: magic numbers, one chart per EA, combined risk, margin and VPS.">
-  <meta property="og:image" content="https://bestglobalbroker.com/og-image.png">
+  <meta property="og:image" content="https://bestglobalbroker.com/img/blog/multi-en.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/style.css?v=4">
-  <link rel="stylesheet" href="/pages.css?v=4">
+  <link rel="stylesheet" href="/pages.css?v=5">
   <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -40,7 +40,7 @@
    "datePublished": "2026-11-20",
    "dateModified": "2026-11-20",
    "mainEntityOfPage": "https://bestglobalbroker.com/en/blog/multiple-eas-same-account-mt5/",
-   "image": "https://bestglobalbroker.com/og-image.png",
+   "image": "https://bestglobalbroker.com/img/blog/multi-en.jpg",
    "author": {
     "@type": "Organization",
     "name": "JAIAK Trading"
@@ -109,6 +109,7 @@
         <h1>Several EAs on one MT5 account: magic numbers and total risk</h1>
         <p class="lead">Combining several EAs with different strategies smooths the curve: when one is on a losing streak, another may be winning. But it has to be set up properly so they don't close each other's trades or add up to more risk than you think.</p>
       </header>
+      <figure class="pcover"><img src="/img/blog/multi-en.webp" width="1200" height="630" alt="Several EAs on one MT5 account: magic numbers and total risk"></figure>
       <div class="prose">
 <h2>1. A different magic number for each EA</h2>
 <p>The magic number is a tag the EA puts on every order. A well-built EA only manages positions with its own magic number, so it doesn't touch the others or your manual trades. If you run two copies of the same EA (for example on two symbols or with two settings), change the magic number on one of them.</p>
@@ -124,6 +125,7 @@
 <li>Combine different strategies (trend, momentum, crossover) rather than several similar ones.</li>
 </ul>
 
+<figure class="pfig"><img src="/img/blog/multi-fig-en.webp" width="1200" height="620" loading="lazy" alt="Risk open at once with 1, 2 and 4 EAs at 0.3% each"><figcaption>With all 4 JAIAK EAs at 0.3%, the maximum simultaneous risk is 1.2% of balance.</figcaption></figure>
 <h2>4. Check the margin</h2>
 <p>Several open gold positions use margin. With low leverage or a small account, one EA may be unable to open because the others are already using the margin. Well-built EAs check margin before each order, but leave some headroom.</p>
 
