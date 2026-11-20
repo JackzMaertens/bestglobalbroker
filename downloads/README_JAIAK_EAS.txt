@@ -19,5 +19,5 @@ INSTALACION EN METATRADER 5
 5. En Parametros de entrada pulsa "Cargar" y elige su archivo .set.
 6. Marca "Permitir comercio algoritmico" y activa "Trading algoritmico".
 
-Soporte: https://bestglobalbroker.com  ·  WhatsApp +34 620 98 70 16
+Soporte: https://bestglobalbroker.com  ·  Telegram @jackzmaertens (t.me/jackzmaertens)
 ==================================================

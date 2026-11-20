@@ -260,11 +260,11 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--c
 .faq details[open] summary::after { content: "–"; }
 .faq details p { padding: 0 0 18px; color: #a8cddc; }
 
-/* WhatsApp */
-.wa { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 60; width: 56px; height: 56px; border-radius: 50%;
-  display: grid; place-items: center; background: #25d366; color: #fff; box-shadow: 0 10px 30px rgba(0, 0, 0, .4); transition: transform .2s; }
-.wa:hover { transform: scale(1.06); }
-.wa svg { width: 28px; height: 28px; fill: currentColor; }
+/* Telegram */
+.tg { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 60; width: 56px; height: 56px; border-radius: 50%;
+  display: grid; place-items: center; background: #229ed9; color: #fff; box-shadow: 0 10px 30px rgba(0, 0, 0, .4); transition: transform .2s; }
+.tg:hover { transform: scale(1.06); }
+.tg svg { width: 30px; height: 30px; margin-left: -2px; fill: currentColor; }
 
 /* footer */
 .foot { border-top: 1px solid var(--line); padding: 56px 0 40px; background: #050a0f; }
@@ -334,7 +334,7 @@ body.lock { overflow: hidden; }
   .formcard, .plan { padding: 22px; }
   .annbar a { gap: 8px; font-size: 12.5px; }
 }
-@media print { .nav, .annbar, .wa, .hero-art { display: none; } body { background: #fff; color: #000; } }
+@media print { .nav, .annbar, .tg, .hero-art { display: none; } body { background: #fff; color: #000; } }
 
 .nocrypto { margin: 14px 0 0; font-size: 13px; color: var(--muted); text-align: center; }
 .nocrypto a { color: var(--up); text-decoration: underline; text-underline-offset: 3px; }
