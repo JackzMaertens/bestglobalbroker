@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Primeros pasos con un EA de oro desde Perú: de la demo a la cuenta real | JAIAK</title>
+  <meta name="description" content="Plan en 4 fases para empezar con un Expert Advisor de oro: backtest, demo durante unas semanas, real con riesgo reducido y cuándo subir el riesgo. Con lo que hay que mirar en cada una.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#060c12">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://bestglobalbroker.com/blog/empezar-ea-oro-peru-demo-real/">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bestglobalbroker.com/blog/empezar-ea-oro-peru-demo-real/">
+  <meta property="og:site_name" content="BestGlobalBroker.com">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:title" content="Primeros pasos con un EA de oro desde Perú: de la demo a la cuenta real | JAIAK">
+  <meta property="og:description" content="Plan en 4 fases para empezar con un Expert Advisor de oro: backtest, demo durante unas semanas, real con riesgo reducido y cuándo subir el riesgo. Con lo que hay que mirar en cada una.">
+  <meta property="og:image" content="https://bestglobalbroker.com/img/blog/c-pe.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/style.css?v=6">
+  <link rel="stylesheet" href="/pages.css?v=6">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Primeros pasos con un EA de oro desde Perú: de la demo a la cuenta real",
+   "description": "Plan en 4 fases para empezar con un Expert Advisor de oro: backtest, demo durante unas semanas, real con riesgo reducido y cuándo subir el riesgo. Con lo que hay que mirar en cada una.",
+   "inLanguage": "es-PE",
+   "datePublished": "2026-11-21",
+   "dateModified": "2026-11-21",
+   "mainEntityOfPage": "https://bestglobalbroker.com/blog/empezar-ea-oro-peru-demo-real/",
+   "image": "https://bestglobalbroker.com/img/blog/c-pe.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "JAIAK Trading"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "BestGlobalBroker.com",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://bestglobalbroker.com/apple-touch-icon.png"
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://bestglobalbroker.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://bestglobalbroker.com/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Primeros pasos con un EA de oro desde Perú: de la demo a la cuenta real"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+</head>
+<body class="pg">
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="/" aria-label="BestGlobalBroker.com">
+        <svg class="brand-ic" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8"/><path d="M7 22 L13 15 L18 18 L25 9"/><circle cx="25" cy="9" r="2.4"/></svg>
+        <span class="brand-tx">BestGlobal<b>Broker</b></span>
+      </a>
+      <nav class="pg-links" aria-label="Main">
+        <a href="/#eas">EAs</a>
+        <a href="/#precios">Precios</a>
+        <a href="/blog/">Blog</a>
+      </nav>
+      <div class="nav-r">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <a href="/blog/empezar-ea-oro-peru-demo-real/" class="on" hreflang="es">ES</a>
+          <a href="/en/blog/" class="" hreflang="en">EN</a>
+        </div>
+        <a class="btn btn-cyan btn-sm hide-sm" href="https://portal.fptrading.com/register?fpm-affiliate-utm-source=IB&amp;fpm-affiliate-agt=473111" target="_blank" rel="noopener sponsored">Abrir cuenta FPTrading</a>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="pg-main">
+    <article class="wrap pg-art narrow-art">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Inicio</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Primeros pasos con un EA de oro desde Perú: de la demo a la cuenta real</li></ol></nav>
+      <header class="pg-head">
+        <div class="eyebrow">Blog · Perú · <time datetime="2026-11-21">Publicado el 21 de noviembre de 2026</time></div>
+        <h1>Primeros pasos con un EA de oro desde Perú: de la demo a la cuenta real</h1>
+        <p class="lead">El error más común al empezar con un EA es ponerlo directamente en real con todo el riesgo. Este es el camino que recomendamos para pasar de cero a una cuenta real con calma y sabiendo lo que puedes esperar.</p>
+      </header>
+      <figure class="pcover"><img src="/img/blog/c-pe.webp" width="1200" height="630" alt="Primeros pasos con un EA de oro desde Perú: de la demo a la cuenta real"></figure>
+      <div class="prose">
+<h2>Fase 1: entender el backtest</h2>
+<p>Antes de instalar nada, mira el backtest del EA: el beneficio, el <b>drawdown máximo</b> (la peor caída), el número de operaciones y la racha de pérdidas más larga. Esa racha es importante: tarde o temprano la vas a vivir en real. Si quieres hacer tu propio backtest, sigue <a href="/blog/backtest-ea-mt5-ticks-reales/">esta guía con ticks reales</a>.</p>
+
+<h2>Fase 2: demo durante unas semanas</h2>
+<p>Abre una cuenta demo en el mismo broker que vas a usar en real y con el capital que tendrías en real. Instala el EA con los ajustes por defecto y déjalo correr al menos <b>2 a 4 semanas</b>. Mientras tanto, revisa:</p>
+<ul>
+<li>Que abra operaciones a horas razonables (en Lima, el oro se mueve más entre las 8:00 y las 11:00).</li>
+<li>Que cada operación tenga stop y que el riesgo sea el que configuraste.</li>
+<li>Que los resultados se parezcan al backtest. Unas semanas no bastan para juzgar el beneficio, pero sí para detectar algo raro.</li>
+</ul>
+
+<h2>Fase 3: real con riesgo reducido</h2>
+<p>Si la demo va bien, pasa a real con un riesgo menor al de la demo, por ejemplo la mitad. En real cambian cosas que la demo no refleja del todo: el deslizamiento en noticias, los spreads en horas tranquilas y, sobre todo, tus nervios al ver dinero de verdad.</p>
+<p>Ten en cuenta el lote mínimo: en el oro es 0,01, y con una cuenta muy pequeña el riesgo real por operación puede ser mucho mayor que el configurado. Te lo explicamos en <a href="/blog/capital-operar-oro-ea-colombia/">esta guía sobre el capital necesario</a>.</p>
+
+<h2>Fase 4: subir el riesgo, si toca</h2>
+<p>Después de uno o dos meses en real, compara la caída máxima que has tenido con la del backtest. Si está dentro de lo esperado y te sientes cómodo, puedes volver al riesgo por defecto. Si la caída ya es mayor que la del backtest, no subas: revisa qué está pasando.</p>
+
+<h2>Lo que no conviene hacer</h2>
+<ul>
+<li>Cambiar los ajustes cada semana según los últimos resultados.</li>
+<li>Apagar el EA justo después de una racha de pérdidas, y volver a encenderlo después de que el mercado se haya recuperado.</li>
+<li>Poner los cuatro EAs a la vez desde el primer día.</li>
+</ul>
+<p>Todo lo demás para empezar desde Perú está en la página de <a href="/pe/">EAs para el oro desde Perú</a>.</p>
+</div>
+      <section class="pg-sec buybox">
+        <h2>Los 4 EAs JAIAK V1</h2>
+        <div class="minis"><a class="mini acc-jury" href="/ea/trend-jury/"><b>JAIAK Trend Jury</b><span>EA de tendencia por votación para XAUUSD M1</span></a><a class="mini acc-angle" href="/ea/angle-shift/"><b>JAIAK Angle Shift</b><span>EA de momentum por ángulo de pendiente para XAUUSD M5</span></a><a class="mini acc-rider" href="/ea/breakout-rider/"><b>JAIAK Breakout Rider</b><span>EA de giros de tendencia y rupturas para XAUUSD M1</span></a><a class="mini acc-ice" href="/ea/ice-cross/"><b>JAIAK Ice Cross</b><span>Cruce de EMAs filtrado para XAUUSD M1</span></a></div>
+      </section>
+      <section class="pg-sec">
+        <h2>Te puede interesar</h2>
+        <ul class="morelist"><li><a href="/blog/horario-oro-xauusd-mexico/">Horario del oro (XAUUSD) en México: cuándo se mueve más y qué hace tu EA</a></li><li><a href="/blog/capital-operar-oro-ea-colombia/">¿Cuánto capital necesitas para operar oro con un EA desde Colombia?</a></li><li><a href="/blog/usdt-ea-mt5-argentina/">USDT y MetaTrader 5 desde Argentina: cómo pagar un EA con stablecoins</a></li><li><a href="/blog/vps-metatrader-5-chile/">VPS para MetaTrader 5 desde Chile: tu EA de oro operando 24 horas</a></li><li><a href="/blog/como-elegir-ea-oro-xauusd-mt5/">Cómo elegir un EA para el oro (XAUUSD) en MetaTrader 5: 8 comprobaciones</a></li><li><a href="/blog/backtest-ea-mt5-ticks-reales/">Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales</a></li></ul>
+      </section>
+      <p class="fine">Operar con CFDs y divisas apalancadas conlleva un alto riesgo de pérdida. Los resultados pasados, reales o simulados, no garantizan resultados futuros. Este contenido no es asesoramiento financiero.</p>
+    </article>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <p class="pg-footnav"><a href="/">BestGlobalBroker.com</a> · <a href="/#eas">EAs</a> · <a href="/blog/">Blog</a> · <a href="https://t.me/jackzmaertens" target="_blank" rel="noopener">Telegram</a></p>
+      <p class="riskbox">Operar con CFDs y divisas apalancadas conlleva un alto riesgo de pérdida. Los resultados pasados, reales o simulados, no garantizan resultados futuros. Este contenido no es asesoramiento financiero.</p>
+      <p class="copy">© 2026 BestGlobalBroker.com · JAIAK Trading</p>
+    </div>
+  </footer>
+  <a class="tg" href="https://t.me/jackzmaertens" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+  </a>
+</body>
+</html>
