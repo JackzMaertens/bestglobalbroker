@@ -342,3 +342,7 @@ body.lock { overflow: hidden; }
 .btn-mql5 { flex-basis: 100%; justify-content: center; background: transparent; border-color: var(--line-2); color: var(--muted); }
 .btn-mql5::after { content: "\2197"; margin-left: 6px; font-size: .9em; }
 .btn-mql5:hover { border-color: var(--acc, var(--cyan)); color: var(--text); }
+
+/* link to EA detail page */
+.card-more { align-self: flex-start; margin-top: -6px; font: 700 13px var(--mono); color: var(--acc); }
+.card-more:hover { text-decoration: underline; text-underline-offset: 3px; }

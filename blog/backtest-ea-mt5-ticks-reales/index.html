@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales | JAIAK</title>
+  <meta name="description" content="Guía paso a paso para probar un Expert Advisor en el probador de estrategias de MT5 con «Cada tick a base de ticks reales», leer el informe y hacer un test forward.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#060c12">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://bestglobalbroker.com/blog/backtest-ea-mt5-ticks-reales/">
+  <link rel="alternate" hreflang="es" href="https://bestglobalbroker.com/blog/backtest-ea-mt5-ticks-reales/">
+  <link rel="alternate" hreflang="en" href="https://bestglobalbroker.com/en/blog/backtest-ea-mt5-real-ticks/">
+  <link rel="alternate" hreflang="x-default" href="https://bestglobalbroker.com/blog/backtest-ea-mt5-ticks-reales/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bestglobalbroker.com/blog/backtest-ea-mt5-ticks-reales/">
+  <meta property="og:site_name" content="BestGlobalBroker.com">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales | JAIAK">
+  <meta property="og:description" content="Guía paso a paso para probar un Expert Advisor en el probador de estrategias de MT5 con «Cada tick a base de ticks reales», leer el informe y hacer un test forward.">
+  <meta property="og:image" content="https://bestglobalbroker.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="/pages.css?v=4">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales",
+   "description": "Guía paso a paso para probar un Expert Advisor en el probador de estrategias de MT5 con «Cada tick a base de ticks reales», leer el informe y hacer un test forward.",
+   "inLanguage": "es",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
+   "mainEntityOfPage": "https://bestglobalbroker.com/blog/backtest-ea-mt5-ticks-reales/",
+   "image": "https://bestglobalbroker.com/og-image.png",
+   "author": {
+    "@type": "Organization",
+    "name": "JAIAK Trading"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "BestGlobalBroker.com",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://bestglobalbroker.com/apple-touch-icon.png"
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://bestglobalbroker.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://bestglobalbroker.com/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+</head>
+<body class="pg">
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="/" aria-label="BestGlobalBroker.com">
+        <svg class="brand-ic" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8"/><path d="M7 22 L13 15 L18 18 L25 9"/><circle cx="25" cy="9" r="2.4"/></svg>
+        <span class="brand-tx">BestGlobal<b>Broker</b></span>
+      </a>
+      <nav class="pg-links" aria-label="Main">
+        <a href="/#eas">EAs</a>
+        <a href="/#precios">Precios</a>
+        <a href="/blog/">Blog</a>
+      </nav>
+      <div class="nav-r">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <a href="/blog/backtest-ea-mt5-ticks-reales/" class="on" hreflang="es">ES</a>
+          <a href="/en/blog/backtest-ea-mt5-real-ticks/" class="" hreflang="en">EN</a>
+        </div>
+        <a class="btn btn-cyan btn-sm hide-sm" href="https://portal.fptrading.com/register?fpm-affiliate-utm-source=IB&amp;fpm-affiliate-agt=473111" target="_blank" rel="noopener sponsored">Abrir cuenta FPTrading</a>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="pg-main">
+    <article class="wrap pg-art narrow-art">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Inicio</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales</li></ol></nav>
+      <header class="pg-head">
+        <div class="eyebrow">Blog · <time datetime="2026-11-20">Publicado el 20 de noviembre de 2026</time></div>
+        <h1>Cómo hacer un backtest de un EA en MetaTrader 5 con ticks reales</h1>
+        <p class="lead">El probador de estrategias de MetaTrader 5 es la mejor herramienta gratuita para saber si un EA tiene sentido antes de arriesgar dinero. Bien configurado, simula el mercado con los ticks reales de tu broker. Mal configurado, te enseña resultados que nunca vas a ver en real.</p>
+      </header>
+      <div class="prose">
+<h2>1. Abre el probador</h2>
+<p>En MT5 pulsa <b>Ctrl+R</b> (o menú Ver → Probador de estrategias). En la pestaña <b>Configuración</b> elige el EA en «Experto», el símbolo (XAUUSD o como lo llame tu broker: GOLD, XAUUSD.m…) y el marco temporal para el que está pensado el EA.</p>
+
+<h2>2. Elige el periodo</h2>
+<p>En «Intervalo» selecciona «Periodo personalizado» y pon fechas concretas. Usa al menos varios meses y, si puedes, incluye fases de tendencia y de rango. Para comprobar si un EA está sobreajustado, activa <b>«Periodo forward»</b>: MT5 reserva la parte final del periodo y la prueba aparte con los mismos parámetros.</p>
+
+<h2>3. El modo de modelado: ticks reales</h2>
+<p>En «Modelado» elige <b>«Cada tick a base de ticks reales»</b>. MT5 descarga los ticks que tu broker registró de verdad, con su spread variable. Es más lento que «OHLC en M1» o «Solo precios de apertura», pero es el único modo fiable para EAs que operan en M1 o M5 con stops ajustados. Al terminar, el informe muestra la «Calidad del historial»: lo ideal es 100% o muy cerca.</p>
+
+<h2>4. Depósito, apalancamiento y retrasos</h2>
+<p>Pon un depósito parecido al que vas a usar (por ejemplo 10.000 USD) y el apalancamiento de tu cuenta. En «Retrasos» puedes simular el retraso de ejecución: «Sin retrasos» es el caso ideal; un retraso aleatorio te enseña cómo empeora el resultado con una ejecución real. Si el EA se hunde con un retraso pequeño, depende demasiado de la ejecución perfecta.</p>
+
+<h2>5. Parámetros de entrada</h2>
+<p>En la pestaña «Parámetros de entrada» comprueba los valores. Si el EA viene con un archivo .set optimizado, cárgalo con clic derecho → Cargar. Ojo: MT5 recuerda los últimos valores usados, así que si has hecho pruebas antes, usa clic derecho → «Por defecto» o vuelve a cargar el .set para empezar limpio.</p>
+
+<h2>6. Lee el informe</h2>
+<p>Pulsa «Empezar» y, al terminar, abre la pestaña <b>Backtest</b>. Los datos que más importan:</p>
+<ul>
+<li><b>Beneficio neto</b> y su relación con el depósito.</li>
+<li><b>Reducción máxima de la equidad</b>: la peor caída, contando las operaciones abiertas.</li>
+<li><b>Factor de beneficio</b>: ganancias brutas entre pérdidas brutas. Por encima de 1,2 con muchas operaciones ya es interesante.</li>
+<li><b>Factor de recuperación</b>: beneficio neto entre drawdown máximo.</li>
+<li><b>Número de operaciones</b>: con menos de 100 el resultado puede ser casualidad.</li>
+<li><b>Pérdidas consecutivas máximas</b>: te prepara para las rachas malas.</li>
+</ul>
+<p>La pestaña «Gráfico» muestra la curva de balance y equidad. Busca una subida sostenida, no un salto puntual.</p>
+
+<h2>7. Guarda el informe</h2>
+<p>Con clic derecho sobre el informe → Informe → HTML guardas un informe completo con todas las operaciones. Es útil para compararlo con resultados en vivo más adelante.</p>
+
+<h2>Prueba los EAs JAIAK tú mismo</h2>
+<p>Todos los EAs JAIAK funcionan siempre en el probador de estrategias, sin necesidad de clave de licencia, para que puedas repetir nuestros tests con los datos de tu broker. En cada ficha tienes nuestras condiciones exactas: <a href="/ea/trend-jury/">Trend Jury</a>, <a href="/ea/angle-shift/">Angle Shift</a>, <a href="/ea/breakout-rider/">Breakout Rider</a> e <a href="/ea/ice-cross/">Ice Cross</a>.</p>
+</div>
+      <section class="pg-sec buybox">
+        <h2>Los 4 EAs JAIAK V1</h2>
+        <div class="minis"><a class="mini acc-jury" href="/ea/trend-jury/"><b>JAIAK Trend Jury</b><span>EA de tendencia por votación para XAUUSD M1</span></a><a class="mini acc-angle" href="/ea/angle-shift/"><b>JAIAK Angle Shift</b><span>EA de momentum por ángulo de pendiente para XAUUSD M5</span></a><a class="mini acc-rider" href="/ea/breakout-rider/"><b>JAIAK Breakout Rider</b><span>EA de giros de tendencia y rupturas para XAUUSD M1</span></a><a class="mini acc-ice" href="/ea/ice-cross/"><b>JAIAK Ice Cross</b><span>Cruce de EMAs filtrado para XAUUSD M1</span></a></div>
+      </section>
+      <section class="pg-sec">
+        <h2>Te puede interesar</h2>
+        <ul class="morelist"><li><a href="/blog/como-elegir-ea-oro-xauusd-mt5/">Cómo elegir un EA para el oro (XAUUSD) en MetaTrader 5: 8 comprobaciones</a></li><li><a href="/blog/ea-cuentas-fondeo-prop-firm/">Usar un EA en una cuenta de fondeo (prop firm): qué revisar antes</a></li><li><a href="/blog/varios-ea-misma-cuenta-mt5/">Varios EAs en la misma cuenta de MT5: números mágicos y riesgo total</a></li></ul>
+      </section>
+      <p class="fine">Operar con CFDs y divisas apalancadas conlleva un alto riesgo de pérdida. Los resultados pasados, reales o simulados, no garantizan resultados futuros. Este contenido no es asesoramiento financiero.</p>
+    </article>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <p class="pg-footnav"><a href="/">BestGlobalBroker.com</a> · <a href="/#eas">EAs</a> · <a href="/blog/">Blog</a> · <a href="https://wa.me/34620987016" target="_blank" rel="noopener">WhatsApp</a></p>
+      <p class="riskbox">Operar con CFDs y divisas apalancadas conlleva un alto riesgo de pérdida. Los resultados pasados, reales o simulados, no garantizan resultados futuros. Este contenido no es asesoramiento financiero.</p>
+      <p class="copy">© 2026 BestGlobalBroker.com · JAIAK Trading</p>
+    </div>
+  </footer>
+  <a class="wa" href="https://wa.me/34620987016?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20EAs%20JAIAK%20V1" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+</body>
+</html>

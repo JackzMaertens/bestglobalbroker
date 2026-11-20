@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Several EAs on one MT5 account: magic numbers and total risk | JAIAK</title>
+  <meta name="description" content="How to run several Expert Advisors at once on a MetaTrader 5 account without conflicts: magic numbers, one chart per EA, combined risk, margin and VPS.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#060c12">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://bestglobalbroker.com/en/blog/multiple-eas-same-account-mt5/">
+  <link rel="alternate" hreflang="es" href="https://bestglobalbroker.com/blog/varios-ea-misma-cuenta-mt5/">
+  <link rel="alternate" hreflang="en" href="https://bestglobalbroker.com/en/blog/multiple-eas-same-account-mt5/">
+  <link rel="alternate" hreflang="x-default" href="https://bestglobalbroker.com/blog/varios-ea-misma-cuenta-mt5/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bestglobalbroker.com/en/blog/multiple-eas-same-account-mt5/">
+  <meta property="og:site_name" content="BestGlobalBroker.com">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Several EAs on one MT5 account: magic numbers and total risk | JAIAK">
+  <meta property="og:description" content="How to run several Expert Advisors at once on a MetaTrader 5 account without conflicts: magic numbers, one chart per EA, combined risk, margin and VPS.">
+  <meta property="og:image" content="https://bestglobalbroker.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="/pages.css?v=4">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Several EAs on one MT5 account: magic numbers and total risk",
+   "description": "How to run several Expert Advisors at once on a MetaTrader 5 account without conflicts: magic numbers, one chart per EA, combined risk, margin and VPS.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
+   "mainEntityOfPage": "https://bestglobalbroker.com/en/blog/multiple-eas-same-account-mt5/",
+   "image": "https://bestglobalbroker.com/og-image.png",
+   "author": {
+    "@type": "Organization",
+    "name": "JAIAK Trading"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "BestGlobalBroker.com",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://bestglobalbroker.com/apple-touch-icon.png"
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://bestglobalbroker.com/?lang=en"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://bestglobalbroker.com/en/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Several EAs on one MT5 account: magic numbers and total risk"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+</head>
+<body class="pg">
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="/?lang=en" aria-label="BestGlobalBroker.com">
+        <svg class="brand-ic" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8"/><path d="M7 22 L13 15 L18 18 L25 9"/><circle cx="25" cy="9" r="2.4"/></svg>
+        <span class="brand-tx">BestGlobal<b>Broker</b></span>
+      </a>
+      <nav class="pg-links" aria-label="Main">
+        <a href="/?lang=en#eas">EAs</a>
+        <a href="/?lang=en#precios">Pricing</a>
+        <a href="/en/blog/">Blog</a>
+      </nav>
+      <div class="nav-r">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <a href="/blog/varios-ea-misma-cuenta-mt5/" class="" hreflang="es">ES</a>
+          <a href="/en/blog/multiple-eas-same-account-mt5/" class="on" hreflang="en">EN</a>
+        </div>
+        <a class="btn btn-cyan btn-sm hide-sm" href="https://portal.fptrading.com/register?fpm-affiliate-utm-source=IB&amp;fpm-affiliate-agt=473111" target="_blank" rel="noopener sponsored">Open FPTrading account</a>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="pg-main">
+    <article class="wrap pg-art narrow-art">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/?lang=en">Home</a></li><li><a href="/en/blog/">Blog</a></li><li aria-current="page">Several EAs on one MT5 account: magic numbers and total risk</li></ol></nav>
+      <header class="pg-head">
+        <div class="eyebrow">Blog · <time datetime="2026-11-20">Published on 20 November 2026</time></div>
+        <h1>Several EAs on one MT5 account: magic numbers and total risk</h1>
+        <p class="lead">Combining several EAs with different strategies smooths the curve: when one is on a losing streak, another may be winning. But it has to be set up properly so they don't close each other's trades or add up to more risk than you think.</p>
+      </header>
+      <div class="prose">
+<h2>1. A different magic number for each EA</h2>
+<p>The magic number is a tag the EA puts on every order. A well-built EA only manages positions with its own magic number, so it doesn't touch the others or your manual trades. If you run two copies of the same EA (for example on two symbols or with two settings), change the magic number on one of them.</p>
+
+<h2>2. One chart per EA</h2>
+<p>In MT5 each chart can only hold one EA. Open an XAUUSD chart for each EA, on its correct timeframe, and load its inputs. Save everything as a <b>profile</b> (File → Profiles) so you can restore it if you reinstall MT5.</p>
+
+<h2>3. Add up the risk</h2>
+<p>This is the most common mistake. If you have four EAs risking 0.3% per trade and all four open at once, you have 1.2% at stake. And if they all trade gold, their trades are correlated: a sharp move can stop out several at the same time. Practical rules:</p>
+<ul>
+<li>Work out the maximum simultaneous risk: risk per trade × number of EAs.</li>
+<li>If that feels like too much, lower each EA's risk rather than removing EAs.</li>
+<li>Combine different strategies (trend, momentum, crossover) rather than several similar ones.</li>
+</ul>
+
+<h2>4. Check the margin</h2>
+<p>Several open gold positions use margin. With low leverage or a small account, one EA may be unable to open because the others are already using the margin. Well-built EAs check margin before each order, but leave some headroom.</p>
+
+<h2>5. Daily limits per EA and per account</h2>
+<p>Each EA's daily loss limit is calculated on its own trades. If you need a limit for the whole account (for example on a <a href="/en/blog/ea-prop-firm-accounts/">prop-firm account</a>), set each EA's risk so that the sum of their limits stays below it.</p>
+
+<h2>6. A VPS so nothing stops</h2>
+<p>EAs only trade while MT5 is open and connected. A VPS close to the broker's server keeps everything running 24/5 and reduces latency.</p>
+
+<h2>The JAIAK family is built for this</h2>
+<p>The four JAIAK V1 EAs come with different magic numbers, only manage their own positions and share the same risk management, so you can run them together on XAUUSD: <a href="/en/ea/trend-jury/">Trend Jury</a> (M1), <a href="/en/ea/angle-shift/">Angle Shift</a> (M5), <a href="/en/ea/breakout-rider/">Breakout Rider</a> (M1) and <a href="/en/ea/ice-cross/">Ice Cross</a> (M1).</p>
+</div>
+      <section class="pg-sec buybox">
+        <h2>The 4 JAIAK V1 EAs</h2>
+        <div class="minis"><a class="mini acc-jury" href="/en/ea/trend-jury/"><b>JAIAK Trend Jury</b><span>Vote-based trend EA for XAUUSD M1</span></a><a class="mini acc-angle" href="/en/ea/angle-shift/"><b>JAIAK Angle Shift</b><span>Slope-angle momentum EA for XAUUSD M5</span></a><a class="mini acc-rider" href="/en/ea/breakout-rider/"><b>JAIAK Breakout Rider</b><span>Trend-flip and breakout EA for XAUUSD M1</span></a><a class="mini acc-ice" href="/en/ea/ice-cross/"><b>JAIAK Ice Cross</b><span>Filtered EMA crossover for XAUUSD M1</span></a></div>
+      </section>
+      <section class="pg-sec">
+        <h2>You may also like</h2>
+        <ul class="morelist"><li><a href="/en/blog/how-to-choose-gold-ea-xauusd-mt5/">How to choose a gold EA (XAUUSD) for MetaTrader 5: 8 checks</a></li><li><a href="/en/blog/backtest-ea-mt5-real-ticks/">How to backtest an EA in MetaTrader 5 with real ticks</a></li><li><a href="/en/blog/ea-prop-firm-accounts/">Using an EA on a prop-firm account: what to check first</a></li></ul>
+      </section>
+      <p class="fine">Trading leveraged CFDs and forex carries a high risk of loss. Past results, live or simulated, do not guarantee future results. This content is not financial advice.</p>
+    </article>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <p class="pg-footnav"><a href="/?lang=en">BestGlobalBroker.com</a> · <a href="/?lang=en#eas">EAs</a> · <a href="/en/blog/">Blog</a> · <a href="https://wa.me/34620987016" target="_blank" rel="noopener">WhatsApp</a></p>
+      <p class="riskbox">Trading leveraged CFDs and forex carries a high risk of loss. Past results, live or simulated, do not guarantee future results. This content is not financial advice.</p>
+      <p class="copy">© 2026 BestGlobalBroker.com · JAIAK Trading</p>
+    </div>
+  </footer>
+  <a class="wa" href="https://wa.me/34620987016?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20EAs%20JAIAK%20V1" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+</body>
+</html>

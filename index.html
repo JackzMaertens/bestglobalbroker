@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="/style.css?v=3">
+  <link rel="stylesheet" href="/style.css?v=4">
 
   <script type="application/ld+json">
 {
@@ -83,7 +83,7 @@
    "operatingSystem": "Windows (MetaTrader 5)",
    "description": "Un jurado de cuatro indicadores (Parabolic SAR, ADX, ATR y Estocástico) vota cada entrada. Solo opera cuando hay mayoría a favor de la tendencia y deja correr las ganancias con un trailing por PSAR.",
    "softwareVersion": "1.0",
-   "url": "https://bestglobalbroker.com/#ea-jury",
+   "url": "https://bestglobalbroker.com/ea/trend-jury/",
    "offers": {
     "@type": "Offer",
     "price": "49.00",
@@ -104,7 +104,7 @@
    "operatingSystem": "Windows (MetaTrader 5)",
    "description": "Mide en grados la pendiente del precio normalizada por volatilidad. Cuando el ángulo supera el umbral entra a favor del impulso, filtrado por una EMA lenta y por el índice de eficiencia del movimiento.",
    "softwareVersion": "1.0",
-   "url": "https://bestglobalbroker.com/#ea-angle",
+   "url": "https://bestglobalbroker.com/ea/angle-shift/",
    "offers": {
     "@type": "Offer",
     "price": "49.00",
@@ -125,7 +125,7 @@
    "operatingSystem": "Windows (MetaTrader 5)",
    "description": "Combina un stop dinámico por ATR que detecta los giros de tendencia con rupturas de rango, una nube de EMAs y un filtro de seis votos (RSI, ADX, MACD, volumen…). Opcionalmente exige el mismo sesgo en M15, H1 y H4.",
    "softwareVersion": "1.0",
-   "url": "https://bestglobalbroker.com/#ea-rider",
+   "url": "https://bestglobalbroker.com/ea/breakout-rider/",
    "offers": {
     "@type": "Offer",
     "price": "49.00",
@@ -146,7 +146,7 @@
    "operatingSystem": "Windows (MetaTrader 5)",
    "description": "El clásico cruce de medias, bien hecho: EMA rápida y lenta con filtro de tendencia, fuerza mínima de ADX y separación mínima en ATR para evitar los cruces falsos de los rangos.",
    "softwareVersion": "1.0",
-   "url": "https://bestglobalbroker.com/#ea-ice",
+   "url": "https://bestglobalbroker.com/ea/ice-cross/",
    "offers": {
     "@type": "Offer",
     "price": "49.00",
@@ -272,6 +272,7 @@
         <a href="#precios" data-i18n="nav_pricing">Precios</a>
         <a href="#descarga" data-i18n="nav_download">Descarga</a>
         <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="/blog/" data-href-en="/en/blog/" data-i18n="nav_blog">Blog</a>
       </nav>
       <div class="nav-r">
         <div class="lang" role="group" aria-label="Idioma / Language">
@@ -351,6 +352,7 @@
               </div>
             </div>
             <p data-i18n="ea1_desc">Un jurado de cuatro indicadores (Parabolic SAR, ADX, ATR y Estocástico) vota cada entrada. Solo opera cuando hay mayoría a favor de la tendencia y deja correr las ganancias con un trailing por PSAR.</p>
+            <a class="card-more" href="/ea/trend-jury/" data-href-en="/en/ea/trend-jury/"><span data-i18n="btn_more">Ver detalles y backtest →</span></a>
             <ul class="ticks">
               <li data-i18n="ea1_f1">Votación PSAR · ADX · ATR · Estocástico con mínimo de votos configurable</li><li data-i18n="ea1_f2">Stop inicial por ATR con tope máximo de puntos</li>
               <li data-i18n="ea1_f3">Cierre parcial del 50%, break-even y trailing por PSAR</li><li data-i18n="ea1_f4">Límite de pérdida diaria y de pérdidas consecutivas</li>
@@ -377,6 +379,7 @@
               </div>
             </div>
             <p data-i18n="ea2_desc">Mide en grados la pendiente del precio normalizada por volatilidad. Cuando el ángulo supera el umbral entra a favor del impulso, filtrado por una EMA lenta y por el índice de eficiencia del movimiento.</p>
+            <a class="card-more" href="/ea/angle-shift/" data-href-en="/en/ea/angle-shift/"><span data-i18n="btn_more">Ver detalles y backtest →</span></a>
             <ul class="ticks">
               <li data-i18n="ea2_f1">Indicador de ángulo en vivo con gauge en el gráfico</li><li data-i18n="ea2_f2">Modo momentum, reversión o automático por eficiencia</li>
               <li data-i18n="ea2_f3">Gestión en R: parcial, break-even con bloqueo y trailing</li><li data-i18n="ea2_f4">Estadísticas reales por operación (R ganada/perdida)</li>
@@ -403,6 +406,7 @@
               </div>
             </div>
             <p data-i18n="ea3_desc">Combina un stop dinámico por ATR que detecta los giros de tendencia con rupturas de rango, una nube de EMAs y un filtro de seis votos (RSI, ADX, MACD, volumen…). Opcionalmente exige el mismo sesgo en M15, H1 y H4.</p>
+            <a class="card-more" href="/ea/breakout-rider/" data-href-en="/en/ea/breakout-rider/"><span data-i18n="btn_more">Ver detalles y backtest →</span></a>
             <ul class="ticks">
               <li data-i18n="ea3_f1">Señal por giro de tendencia, ruptura o ambas</li><li data-i18n="ea3_f2">Perfil de volumen (POC, VAH, VAL) y sesiones de Londres y Nueva York</li>
               <li data-i18n="ea3_f3">Break-even, parcial y filtro de noticias</li><li data-i18n="ea3_f4">Pausa tras pérdidas consecutivas y enfriamiento tras pérdida</li>
@@ -429,6 +433,7 @@
               </div>
             </div>
             <p data-i18n="ea4_desc">El clásico cruce de medias, bien hecho: EMA rápida y lenta con filtro de tendencia, fuerza mínima de ADX y separación mínima en ATR para evitar los cruces falsos de los rangos.</p>
+            <a class="card-more" href="/ea/ice-cross/" data-href-en="/en/ea/ice-cross/"><span data-i18n="btn_more">Ver detalles y backtest →</span></a>
             <ul class="ticks">
               <li data-i18n="ea4_f1">Filtros de EMA de tendencia, ADX y separación</li><li data-i18n="ea4_f2">Stop y objetivo por ATR con riesgo en % del balance</li>
               <li data-i18n="ea4_f3">Break-even protector, parcial y trailing por ATR</li><li data-i18n="ea4_f4">Guardas diarias: pérdida máxima, racha y enfriamiento</li>
@@ -647,6 +652,7 @@
           <a href="#precios" data-i18n="nav_pricing">Precios</a>
           <a href="#descarga" data-i18n="nav_download">Descarga</a>
           <a href="#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="/blog/" data-href-en="/en/blog/" data-i18n="nav_blog">Blog</a>
         </nav>
         <nav aria-label="Legal">
           <h4 data-i18n="ft_legal">Legal</h4>
@@ -671,7 +677,7 @@
   </div>
 
   <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
-  <script src="/translations.js?v=3" defer></script>
-  <script src="/script.js?v=3" defer></script>
+  <script src="/translations.js?v=4" defer></script>
+  <script src="/script.js?v=4" defer></script>
 </body>
 </html>

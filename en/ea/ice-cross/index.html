@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>JAIAK Ice Cross: filtered EMA crossover EA for gold (XAUUSD M1)</title>
+  <meta name="description" content="Ice Cross trades the EMA cross on gold with trend, ADX and ATR-separation filters. Profit factor 2.21 and 0.88% drawdown in the real-tick backtest.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#060c12">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://bestglobalbroker.com/en/ea/ice-cross/">
+  <link rel="alternate" hreflang="es" href="https://bestglobalbroker.com/ea/ice-cross/">
+  <link rel="alternate" hreflang="en" href="https://bestglobalbroker.com/en/ea/ice-cross/">
+  <link rel="alternate" hreflang="x-default" href="https://bestglobalbroker.com/ea/ice-cross/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bestglobalbroker.com/en/ea/ice-cross/">
+  <meta property="og:site_name" content="BestGlobalBroker.com">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="JAIAK Ice Cross: filtered EMA crossover EA for gold (XAUUSD M1)">
+  <meta property="og:description" content="Ice Cross trades the EMA cross on gold with trend, ADX and ATR-separation filters. Profit factor 2.21 and 0.88% drawdown in the real-tick backtest.">
+  <meta property="og:image" content="https://bestglobalbroker.com/img/ea/ice-cross-backtest.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="/pages.css?v=4">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "JAIAK Ice Cross",
+   "applicationCategory": "FinanceApplication",
+   "operatingSystem": "Windows (MetaTrader 5)",
+   "softwareVersion": "1.0",
+   "description": "Ice Cross trades the EMA cross on gold with trend, ADX and ATR-separation filters. Profit factor 2.21 and 0.88% drawdown in the real-tick backtest.",
+   "url": "https://bestglobalbroker.com/en/ea/ice-cross/",
+   "image": "https://bestglobalbroker.com/img/ea/ice-cross-backtest.webp",
+   "offers": {
+    "@type": "Offer",
+    "price": "49.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://bestglobalbroker.com/en/ea/ice-cross/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "JAIAK Trading"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://bestglobalbroker.com/?lang=en"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Expert Advisors",
+     "item": "https://bestglobalbroker.com/?lang=en#eas"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Ice Cross"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Why is the win rate so high?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Many trades reach the protective break-even early; when price comes back they close at a small profit and count as wins. The profit factor (2.21) is the better measure."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it work on prop-firm accounts?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It has a daily loss limit, a consecutive-loss stop and a stop loss on every trade, which fit typical prop-firm rules. Check your firm's own rules."
+     }
+    }
+   ]
+  }
+ ]
+}
+  </script>
+</head>
+<body class="pg">
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="/?lang=en" aria-label="BestGlobalBroker.com">
+        <svg class="brand-ic" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8"/><path d="M7 22 L13 15 L18 18 L25 9"/><circle cx="25" cy="9" r="2.4"/></svg>
+        <span class="brand-tx">BestGlobal<b>Broker</b></span>
+      </a>
+      <nav class="pg-links" aria-label="Main">
+        <a href="/?lang=en#eas">EAs</a>
+        <a href="/?lang=en#precios">Pricing</a>
+        <a href="/en/blog/">Blog</a>
+      </nav>
+      <div class="nav-r">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <a href="/ea/ice-cross/" class="" hreflang="es">ES</a>
+          <a href="/en/ea/ice-cross/" class="on" hreflang="en">EN</a>
+        </div>
+        <a class="btn btn-cyan btn-sm hide-sm" href="https://portal.fptrading.com/register?fpm-affiliate-utm-source=IB&amp;fpm-affiliate-agt=473111" target="_blank" rel="noopener sponsored">Open FPTrading account</a>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="pg-main">
+    <article class="wrap pg-art acc-ice">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/?lang=en">Home</a></li><li><a href="/?lang=en#eas">Expert Advisors</a></li><li aria-current="page">Ice Cross</li></ol></nav>
+      <header class="pg-head">
+        <div class="eyebrow">JAIAK V1 · MetaTrader 5 · XAUUSD M1</div>
+        <h1>JAIAK Ice Cross</h1>
+        <p class="pg-tag">Filtered EMA crossover for XAUUSD M1</p>
+        <p class="lead">The classic moving-average cross on gold, filtered until only the strong crosses are left: it must happen on the right side of the trend EMA, with ADX showing real strength and the two EMAs already apart. Trades are protected early with a break-even, half is closed halfway to the target and the rest trails with ATR.</p>
+        <div class="cta-row">
+          <a class="btn btn-acc" href="https://nowpayments.io/payment/?iid=5262230301" target="_blank" rel="noopener">Buy · $49</a>
+          <a class="btn btn-ghost" href="/?lang=en#precios">Free with FPTrading</a>
+          <a class="btn btn-mql5" href="https://www.mql5.com/en/market/product/209861" target="_blank" rel="noopener">View on MQL5 Market</a>
+        </div>
+      </header>
+
+      <section class="pg-sec">
+        <h2>Backtest results</h2>
+        <div class="stgrid"><div class="st"><b>+314.79 USD</b><span>Net profit</span></div><div class="st"><b>+3.1%</b><span>Return</span></div><div class="st"><b>2.21</b><span>Profit factor</span></div><div class="st"><b>0.88%</b><span>Max equity drawdown</span></div><div class="st"><b>107</b><span>Trades</span></div><div class="st"><b>91.6%</b><span>Winning trades</span></div><div class="st"><b>3.52</b><span>Recovery factor</span></div><div class="st"><b>1</b><span>Max consecutive losses</span></div></div>
+        <figure><img src="/img/ea/ice-cross-backtest.webp" width="1200" height="675" loading="lazy" alt="JAIAK Ice Cross backtest balance curve"></figure>
+        <p class="fine">Test conditions: XAUUSD, MT5 Strategy Tester in "Every tick based on real ticks" mode (100% history quality), 18 May to 17 November 2026, 10,000 USD initial deposit, 1:100 leverage, optimised inputs, FP Trading demo account.</p>
+      </section>
+
+      <section class="pg-sec prose">
+        <h2>How it trades</h2>
+        <ul><li>Fast EMA 14 crosses slow EMA 38.</li><li>Buys only above the trend EMA 50 (sells only below), with ADX at least 30 and the EMAs at least 0.2 × ATR apart.</li><li>Stop at 2 × ATR, target at 2.5 × ATR.</li><li>Break-even after 0.4 × ATR, 50% partial halfway to target and ATR trailing stop.</li></ul>
+        <h2>Risk management</h2>
+        <ul><li>Lot size from risk % of balance (0.3% by default) or a fixed lot, with a margin check.</li><li>3% daily loss limit, stop after 3 consecutive losses and a 15-minute cooldown.</li><li>Buy-only / sell-only modes and two optional trading windows.</li></ul>
+        <p><b>No martingale, no grid, no averaging: every trade has a stop loss from the moment it is opened.</b></p>
+        <h2>Recommendations</h2>
+        <ul><li>XAUUSD on M1.</li><li>Low-spread account, spread under 40 points.</li><li>About 3,000 USD to trade 0.3% risk with the 0.01 minimum lot.</li><li>A good low-drawdown complement to a more active EA.</li></ul>
+      </section>
+
+      <section class="pg-sec">
+        <h2>On-chart panel</h2>
+        <p>Each EA draws a panel with its status, signal, position, stops and statistics, with STOP, RESET and CLOSE ALL buttons.</p>
+        <figure><img src="/img/ea/ice-cross-panel.webp" width="1200" height="750" loading="lazy" alt="JAIAK Ice Cross on-chart panel"></figure>
+      </section>
+
+      <section class="pg-sec faq">
+        <h2>FAQ</h2>
+        <details><summary>Why is the win rate so high?</summary><p>Many trades reach the protective break-even early; when price comes back they close at a small profit and count as wins. The profit factor (2.21) is the better measure.</p></details><details><summary>Does it work on prop-firm accounts?</summary><p>It has a daily loss limit, a consecutive-loss stop and a stop loss on every trade, which fit typical prop-firm rules. Check your firm&#x27;s own rules.</p></details>
+      </section>
+
+      <section class="pg-sec buybox">
+        <h2>Get JAIAK Ice Cross</h2>
+        <p>Lifetime licence for $49, paid in USDT or USDC. After paying, send us the payment ID and your MT5 account number in the <a href="/?lang=en#solicitud">form</a> or on <a href="https://wa.me/34620987016" target="_blank" rel="noopener">WhatsApp</a> and we'll send you the EA with its key. Can't pay in crypto? Message us on WhatsApp.</p>
+        <div class="cta-row">
+          <a class="btn btn-acc" href="https://nowpayments.io/payment/?iid=5262230301" target="_blank" rel="noopener">Buy · $49</a>
+          <a class="btn btn-ghost" href="/?lang=en#precios">Free with FPTrading</a>
+          <a class="btn btn-mql5" href="https://www.mql5.com/en/market/product/209861" target="_blank" rel="noopener">View on MQL5 Market</a>
+        </div>
+        <p class="fine">Backtest results do not guarantee future results. Live results depend on your broker's spread, commission, execution and slippage. Start on demo or with the minimum risk.</p>
+      </section>
+
+      <section class="pg-sec">
+        <h2>The other EAs in the family</h2>
+        <div class="minis"><a class="mini acc-jury" href="/en/ea/trend-jury/"><b>JAIAK Trend Jury</b><span>Vote-based trend EA for XAUUSD M1</span></a><a class="mini acc-angle" href="/en/ea/angle-shift/"><b>JAIAK Angle Shift</b><span>Slope-angle momentum EA for XAUUSD M5</span></a><a class="mini acc-rider" href="/en/ea/breakout-rider/"><b>JAIAK Breakout Rider</b><span>Trend-flip and breakout EA for XAUUSD M1</span></a></div>
+      </section>
+    </article>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <p class="pg-footnav"><a href="/?lang=en">BestGlobalBroker.com</a> · <a href="/?lang=en#eas">EAs</a> · <a href="/en/blog/">Blog</a> · <a href="https://wa.me/34620987016" target="_blank" rel="noopener">WhatsApp</a></p>
+      <p class="riskbox">Trading leveraged CFDs and forex carries a high risk of loss. Past results, live or simulated, do not guarantee future results. This content is not financial advice.</p>
+      <p class="copy">© 2026 BestGlobalBroker.com · JAIAK Trading</p>
+    </div>
+  </footer>
+  <a class="wa" href="https://wa.me/34620987016?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20EAs%20JAIAK%20V1" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+</body>
+</html>
