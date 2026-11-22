@@ -97,3 +97,5 @@ figure img { display: block; width: 100%; height: auto; border-radius: var(--rad
 @media (max-width: 760px) { .opts { grid-template-columns: 1fr; } .sched th, .sched td { padding: 10px 14px; } }
 .minis + .fine { margin-top: 12px; }
 @media (max-width: 560px) { .sched thead th:last-child, .sched td:last-child { display: none; } }
+.live-note { margin-top: 18px; padding: 14px 16px; border-left: 3px solid var(--up, #00ff9c); background: rgba(0,255,156,.05); border-radius: 0 10px 10px 0; color: #b9dbe8; }
+.live-note a { color: #7fe9ff; }
