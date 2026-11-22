@@ -45,7 +45,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="/style.css?v=6">
+  <link rel="stylesheet" href="/style.css?v=7">
 
   <script type="application/ld+json">
 {
@@ -103,6 +103,26 @@
   },
   {
    "@type": "SoftwareApplication",
+   "name": "JAIAK Trend Jury Signals",
+   "applicationCategory": "FinanceApplication",
+   "operatingSystem": "Windows (MetaTrader 5)",
+   "description": "PSAR · ADX · ATR · Stochastic jury: all four must vote the same way.",
+   "url": "https://www.mql5.com/en/market/product/210486",
+   "image": "https://bestglobalbroker.com/img/ind/trend-jury-signals.webp",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.mql5.com/en/market/product/210486"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "JAIAK Trading"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
    "name": "JAIAK Angle Shift V1",
    "alternateName": "JAIAK ANGLE SHIFT V1 Expert Advisor",
    "applicationCategory": "FinanceApplication",
@@ -116,6 +136,26 @@
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
     "url": "https://bestglobalbroker.com/#ea-angle"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "JAIAK Trading"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "JAIAK Angle Shift Signals",
+   "applicationCategory": "FinanceApplication",
+   "operatingSystem": "Windows (MetaTrader 5)",
+   "description": "Price angle in ATR units turning steep in the direction of the EMA 110.",
+   "url": "https://www.mql5.com/en/market/product/210480",
+   "image": "https://bestglobalbroker.com/img/ind/angle-shift-signals.webp",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.mql5.com/en/market/product/210480"
    },
    "publisher": {
     "@type": "Organization",
@@ -145,6 +185,26 @@
   },
   {
    "@type": "SoftwareApplication",
+   "name": "JAIAK Breakout Rider Signals",
+   "applicationCategory": "FinanceApplication",
+   "operatingSystem": "Windows (MetaTrader 5)",
+   "description": "ATR trail flip with the EMA 21/34 cloud and a 6-filter vote.",
+   "url": "https://www.mql5.com/en/market/product/210481",
+   "image": "https://bestglobalbroker.com/img/ind/breakout-rider-signals.webp",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.mql5.com/en/market/product/210481"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "JAIAK Trading"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
    "name": "JAIAK Ice Cross V1",
    "alternateName": "JAIAK ICE CROSS V1 Expert Advisor",
    "applicationCategory": "FinanceApplication",
@@ -158,6 +218,26 @@
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
     "url": "https://bestglobalbroker.com/#ea-ice"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "JAIAK Trading"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "JAIAK Ice Cross Signals",
+   "applicationCategory": "FinanceApplication",
+   "operatingSystem": "Windows (MetaTrader 5)",
+   "description": "EMA 14/38 cross with EMA 50 trend, ADX ≥ 30 and minimum separation.",
+   "url": "https://www.mql5.com/en/market/product/210397",
+   "image": "https://bestglobalbroker.com/img/ind/ice-cross-signals.webp",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.mql5.com/en/market/product/210397"
    },
    "publisher": {
     "@type": "Organization",
@@ -272,6 +352,7 @@
       </a>
       <nav class="links" id="navlinks" aria-label="Principal">
         <a href="#eas" data-i18n="nav_eas">EAs</a>
+        <a href="#indicadores" data-i18n="nav_ind">Indicadores</a>
         <a href="#equipo" data-i18n="nav_team">Cómo trabajan</a>
         <a href="#validacion" data-i18n="nav_valid">Validación</a>
         <a href="#precios" data-i18n="nav_pricing">Precios</a>
@@ -456,6 +537,67 @@
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- FREE INDICATORS -->
+    <section id="indicadores" class="sec alt">
+      <div class="wrap">
+        <header class="sec-h">
+          <div class="eyebrow" data-i18n="ind_eyebrow">GRATIS · MQL5 MARKET</div>
+          <h2 data-i18n="ind_title">Las señales de cada EA, gratis en tu gráfico</h2>
+          <p data-i18n="ind_desc">Cuatro indicadores gratuitos para MetaTrader 5 que dibujan las entradas de cada estrategia JAIAK con su stop y su objetivo. No operan por ti: te enseñan dónde entraría el EA para que lo compruebes antes de automatizarlo.</p>
+        </header>
+        <ul class="ind-ticks">
+          <li data-i18n="ind_f1">Señales en vela cerrada: sin repintado</li><li data-i18n="ind_f2">Stop y objetivo dibujados en cada señal</li><li data-i18n="ind_f3">Alertas emergentes, sonido, push y e-mail</li>
+        </ul>
+        <div class="inds">
+          <article class="ind acc-jury reveal" id="ind-jury">
+            <a class="ind-img" href="https://www.mql5.com/en/market/product/210486" target="_blank" rel="noopener"><img src="/img/ind/trend-jury-signals.webp" width="1200" height="675" loading="lazy" alt="JAIAK TREND JURY Signals · XAUUSD"></a>
+            <div class="ind-b">
+              <h3>TREND JURY <em>SIGNALS</em></h3>
+              <p data-i18n="ind1_d">Jurado PSAR · ADX · ATR · Estocástico: los cuatro deben votar igual.</p>
+              <div class="ind-act">
+                <a class="btn btn-acc btn-sm" href="https://www.mql5.com/en/market/product/210486" target="_blank" rel="noopener"><span data-i18n="ind_btn">Descargar gratis en MQL5</span></a>
+                <a class="ind-ea" href="/ea/trend-jury/" data-href-en="/en/ea/trend-jury/"><span data-i18n="ind_ea">Ver el EA</span> →</a>
+              </div>
+            </div>
+          </article>
+          <article class="ind acc-angle reveal" id="ind-angle">
+            <a class="ind-img" href="https://www.mql5.com/en/market/product/210480" target="_blank" rel="noopener"><img src="/img/ind/angle-shift-signals.webp" width="1200" height="675" loading="lazy" alt="JAIAK ANGLE SHIFT Signals · XAUUSD"></a>
+            <div class="ind-b">
+              <h3>ANGLE SHIFT <em>SIGNALS</em></h3>
+              <p data-i18n="ind2_d">Ángulo del precio en unidades ATR que gira fuerte a favor de la EMA 110.</p>
+              <div class="ind-act">
+                <a class="btn btn-acc btn-sm" href="https://www.mql5.com/en/market/product/210480" target="_blank" rel="noopener"><span data-i18n="ind_btn">Descargar gratis en MQL5</span></a>
+                <a class="ind-ea" href="/ea/angle-shift/" data-href-en="/en/ea/angle-shift/"><span data-i18n="ind_ea">Ver el EA</span> →</a>
+              </div>
+            </div>
+          </article>
+          <article class="ind acc-rider reveal" id="ind-rider">
+            <a class="ind-img" href="https://www.mql5.com/en/market/product/210481" target="_blank" rel="noopener"><img src="/img/ind/breakout-rider-signals.webp" width="1200" height="675" loading="lazy" alt="JAIAK BREAKOUT RIDER Signals · XAUUSD"></a>
+            <div class="ind-b">
+              <h3>BREAKOUT RIDER <em>SIGNALS</em></h3>
+              <p data-i18n="ind3_d">Giro del trailing ATR con la nube EMA 21/34 y una votación de 6 filtros.</p>
+              <div class="ind-act">
+                <a class="btn btn-acc btn-sm" href="https://www.mql5.com/en/market/product/210481" target="_blank" rel="noopener"><span data-i18n="ind_btn">Descargar gratis en MQL5</span></a>
+                <a class="ind-ea" href="/ea/breakout-rider/" data-href-en="/en/ea/breakout-rider/"><span data-i18n="ind_ea">Ver el EA</span> →</a>
+              </div>
+            </div>
+          </article>
+          <article class="ind acc-ice reveal" id="ind-ice">
+            <a class="ind-img" href="https://www.mql5.com/en/market/product/210397" target="_blank" rel="noopener"><img src="/img/ind/ice-cross-signals.webp" width="1200" height="675" loading="lazy" alt="JAIAK ICE CROSS Signals · XAUUSD"></a>
+            <div class="ind-b">
+              <h3>ICE CROSS <em>SIGNALS</em></h3>
+              <p data-i18n="ind4_d">Cruce EMA 14/38 con tendencia EMA 50, ADX ≥ 30 y separación mínima.</p>
+              <div class="ind-act">
+                <a class="btn btn-acc btn-sm" href="https://www.mql5.com/en/market/product/210397" target="_blank" rel="noopener"><span data-i18n="ind_btn">Descargar gratis en MQL5</span></a>
+                <a class="ind-ea" href="/ea/ice-cross/" data-href-en="/en/ea/ice-cross/"><span data-i18n="ind_ea">Ver el EA</span> →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="note" data-i18n="ind_note">Descarga directa desde MQL5 Market, la tienda oficial de MetaTrader: se instala solo en tu terminal. Las señales no son una promesa de beneficio.</p>
       </div>
     </section>
 
@@ -654,6 +796,7 @@
         <nav aria-label="Footer">
           <h4 data-i18n="ft_nav">Navegación</h4>
           <a href="#eas" data-i18n="nav_eas">EAs</a>
+          <a href="#indicadores" data-i18n="nav_ind">Indicadores</a>
           <a href="#precios" data-i18n="nav_pricing">Precios</a>
           <a href="#descarga" data-i18n="nav_download">Descarga</a>
           <a href="#faq" data-i18n="nav_faq">FAQ</a>
