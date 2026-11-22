@@ -276,9 +276,6 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--c
 .foot nav a:hover { color: var(--text); }
 .riskbox { margin-top: 36px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; font-size: 12.5px; color: var(--muted); background: #060f16; }
 .copy { margin-top: 18px; font-size: 12.5px; color: var(--dim); }
-.ft-countries { margin-top: 28px; font-size: 14px; color: var(--muted); }
-.ft-countries a { color: var(--muted); }
-.ft-countries a:hover { color: var(--cyan); }
 
 /* modal */
 .modal { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; padding: 20px; background: rgba(2, 6, 10, .78);
@@ -349,39 +346,3 @@ body.lock { overflow: hidden; }
 /* link to EA detail page */
 .card-more { align-self: flex-start; margin-top: -6px; font: 700 13px var(--mono); color: var(--acc); }
 .card-more:hover { text-decoration: underline; text-underline-offset: 3px; }
-
-/* ---------- free indicators ---------- */
-#indicadores { border-bottom: 1px solid var(--line); }
-.ind-ticks { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; list-style: none; margin: -24px 0 34px; padding: 0; color: #b9dbe8; font-size: 15px; }
-.ind-ticks li::before { content: "✓"; color: var(--up); margin-right: 8px; font-weight: 700; }
-.inds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
-.ind { display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--line); border-top: 3px solid var(--acc); border-radius: var(--radius); overflow: hidden; transition: border-color .2s, transform .2s; }
-.ind:hover { border-color: var(--acc); transform: translateY(-2px); }
-.ind-img { display: block; aspect-ratio: 16 / 9; background: #050a10; border-bottom: 1px solid var(--line); }
-.ind-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.ind-b { display: flex; flex-direction: column; gap: 12px; padding: 20px 22px 22px; flex: 1; }
-.ind h3 { font: 800 20px/1.2 var(--mono); color: var(--acc); }
-.ind h3 em { font-style: normal; color: var(--muted); font-weight: 700; font-size: .8em; letter-spacing: .08em; margin-left: 4px; }
-.ind-b p { color: #b9dbe8; font-size: 15px; }
-.ind-act { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: auto; }
-.ind-act .btn::after { content: "\2197"; margin-left: 6px; font-size: .9em; }
-.ind-ea { color: var(--muted); font-size: 14px; }
-.ind-ea:hover { color: var(--text); }
-@media (max-width: 760px) { .inds { grid-template-columns: 1fr; } .ind-ticks { margin-top: -18px; flex-direction: column; align-items: center; gap: 6px; } }
-
-/* ---------- live track record ---------- */
-.live { margin-top: 34px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 26px; align-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 28px; }
-.live-t h3 { display: inline; font: 800 20px/1.3 var(--mono); color: var(--text); }
-.live-t p { margin-top: 10px; color: #b9dbe8; font-size: 15px; }
-.live-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--up); margin-right: 10px; vertical-align: 2px; box-shadow: 0 0 0 0 rgba(0,255,156,.6); animation: livepulse 2s infinite; }
-@keyframes livepulse { 0% { box-shadow: 0 0 0 0 rgba(0,255,156,.55); } 70% { box-shadow: 0 0 0 12px rgba(0,255,156,0); } 100% { box-shadow: 0 0 0 0 rgba(0,255,156,0); } }
-@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
-.live-l { display: flex; flex-direction: column; gap: 12px; }
-.live-a { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 12px; border: 1px solid var(--line); background: #050c13; color: var(--text); transition: border-color .2s, transform .2s; }
-.live-a:hover { transform: translateY(-1px); }
-.live-a b { display: block; font-size: 15px; }
-.live-a small { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
-.live-a.tgc svg { color: #2aabee; } .live-a.tgc:hover { border-color: #2aabee; }
-.live-a.fxb svg { color: var(--up); } .live-a.fxb:hover { border-color: var(--up); }
-@media (max-width: 760px) { .live { grid-template-columns: 1fr; padding: 22px 18px; } }
-.live-a svg { flex: 0 0 26px; }
