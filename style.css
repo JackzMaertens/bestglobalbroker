@@ -391,3 +391,9 @@ body.lock { overflow: hidden; }
 .hero-live .live-dot { margin-right: 0; width: 8px; height: 8px; vertical-align: 0; }
 .hero-live b { color: #fff; font-weight: 600; }
 @media (max-width: 480px) { .hero-live b { display: none; } }
+/* Trading Central callout (broker section) */
+.tc-note { display: flex; gap: 18px; align-items: flex-start; margin: 22px 0 26px; padding: 20px 22px; border-radius: var(--radius); background: linear-gradient(135deg, rgba(0,150,190,.10), rgba(255,211,107,.06)); border: 1px solid var(--line-2); }
+.tc-note h3 { font-size: 17px; margin-bottom: 6px; }
+.tc-note p { margin: 0; color: var(--muted, #9cc3d1); }
+.tc-badge { flex: 0 0 auto; width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; font-weight: 800; letter-spacing: .5px; color: #03080d; background: var(--cyan, #00e6dc); }
+@media (max-width: 640px) { .tc-note { flex-direction: column; } }
