@@ -31,6 +31,7 @@
     $$("[data-i18n]").forEach(function (el) { var v = translations[l][el.getAttribute("data-i18n")]; if (v) el.innerHTML = v; });
     $$("[data-i18n-ph]").forEach(function (el) { var v = translations[l][el.getAttribute("data-i18n-ph")]; if (v) el.setAttribute("placeholder", v); });
     $$("[data-href-en]").forEach(function (el) { if (!el.hasAttribute("data-href-es")) el.setAttribute("data-href-es", el.getAttribute("href")); el.setAttribute("href", l === "en" ? el.getAttribute("data-href-en") : el.getAttribute("data-href-es")); });
+    $$("img[data-src-en]").forEach(function (el) { if (!el.hasAttribute("data-src-es")) { el.setAttribute("data-src-es", el.getAttribute("src")); el.setAttribute("data-alt-es", el.getAttribute("alt") || ""); } el.setAttribute("src", l === "en" ? el.getAttribute("data-src-en") : el.getAttribute("data-src-es")); if (el.hasAttribute("data-alt-en")) el.setAttribute("alt", l === "en" ? el.getAttribute("data-alt-en") : el.getAttribute("data-alt-es")); });
     document.documentElement.lang = l;
     store("bgb_lang", l);
     ["es", "en"].forEach(function (x) { var b = $("#lang-" + x); if (b) { b.classList.toggle("on", x === l); b.setAttribute("aria-pressed", x === l ? "true" : "false"); } });
